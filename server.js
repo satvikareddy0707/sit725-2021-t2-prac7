@@ -4,7 +4,7 @@ var app = express()
 const MongoClient = require('mongodb').MongoClient;
 let projectCollection;
 
-const uri = "mongodb+srv://sit-725-2021:NitI75&^@sit-725.arscq.mongodb.net/sit-725-t2-week4?retryWrites=true&w=majority"
+const uri = "mongodb+srv://sit725-2021-t2:zI9YQ7KiprxVZ3Us@sit725.jzgkz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 const client = new MongoClient(uri,{ useNewUrlParser: true})
 
 
@@ -26,7 +26,7 @@ const createColllection = (collectionName) => {
 } 
 
 const cardList = [
-    {
+    /*{
         title: "Kitten 2",
         image: "images/kitten-2.jpg",
         link: "About Kitten 2",
@@ -37,7 +37,7 @@ const cardList = [
         image: "images/kitten-3.jpg",
         link: "About Kitten 3",
         desciption: "Demo desciption about kitten 3"
-    }
+    }*/
 ]
 
 const insertProjects = (project,callback) => {
@@ -60,11 +60,11 @@ app.get('/api/projects',(req,res) => {
     //res.json({statusCode: 200, data: cardList, message:"Success"})
 })
 
-app.post('/api/projcts',(req,res) => {
+app.post('/api/projects',(req,res) => {
     console.log("New Project added", req.body)
     var newProject = req.body;
     //cardList.push(newProject);
-    insertProjects(newProjects,(err,result) => {
+    insertProjects(newProject,(err,result) => {
         if(err) {
             res.json({statusCode: 400, message: err})
       }
@@ -79,5 +79,5 @@ var port = process.env.port || 3000;
 
 app.listen(port, () => {
     console.log("App listening to: " + port);
-    createColllection("to do list")
+    createColllection("To do list")
 })
