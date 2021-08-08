@@ -26,7 +26,7 @@ const createColllection = (collectionName) => {
 } 
 
 const cardList = [
-    /*{
+    {
         title: "Kitten 2",
         image: "images/kitten-2.jpg",
         link: "About Kitten 2",
@@ -37,7 +37,7 @@ const cardList = [
         image: "images/kitten-3.jpg",
         link: "About Kitten 3",
         desciption: "Demo desciption about kitten 3"
-    }*/
+    }
 ]
 
 const insertProjects = (project,callback) => {
@@ -75,9 +75,11 @@ app.post('/api/projects',(req,res) => {
     //res.json({statusCode: 200, message:"Project Successfully added", data: newProject})
 })
 
+
+
 var port = process.env.port || 3000;
 
 app.listen(port, () => {
     console.log("App listening to: " + port);
-    createColllection("To do list")
+    createColllection("Coffee-Time! Please login")
 })
