@@ -16,12 +16,12 @@ app.use(express.static(__dirname + '/public'));
 
 
 const dummyProject={
-  author:'alessio',
-  imageUrl:'https://getwallpapers.com/wallpaper/full/f/3/a/807159-download-funny-cats-wallpapers-1920x1200-meizu.jpg',
-  videoUrl:'https://youtu.be/SkgTxQm9DWM',
+  author:'satvika',
+  imageUrl:'https://share.balsamiq.com/c/3S11bcuXgmEGB4ZYCkxpuy.png',
+  //videoUrl:'https://youtu.be/SkgTxQm9DWM',
   uniqueID:'4',
-  description:'We want to create an environemntal and dogs free farm for cats',
-  title:'CatsFarm'
+  description:'We want to create an to do list ',
+  title:'To do list'
 }
 let dummyData=[dummyProject,dummyProject]
 
@@ -69,7 +69,7 @@ http.listen(port,()=>{
 
 /// DATABASE Connections
 //database connection 
-const uri = "mongodb+srv://alexcloud:alexcloud@nsw-bot.nkfb6.mongodb.net/deakincrowds?retryWrites=true&w=majority";
+const uri = "mongodb+srv://sit725-2021-t2:zI9YQ7KiprxVZ3Us@sit725.jzgkz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 const client = new MongoClient(uri, { useNewUrlParser: true,useUnifiedTopology: true });
 
 let projectsCollection;
