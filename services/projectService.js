@@ -5,6 +5,8 @@ setTimeout(() => {
 
 }, 2000)
 
+
+
 const getAllProjects = (res) => {
     projectsCollection.find().toArray(function (err, result) {
         if (err) throw err;
