@@ -1,6 +1,5 @@
-# sit725-2021-t2-prac5
+# sit725-2021-t2-prac6
 
-This is week 5 prac of SIT725
-It uses MVC structure starategy
+This is week 6 prac of SIT725
 
-Model-view-controller(MVC)
+It uses Mocha and chai
