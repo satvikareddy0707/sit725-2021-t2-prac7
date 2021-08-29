@@ -18,7 +18,7 @@ app.use(express.static(__dirname + '/public'));
 const dummyProject={
   author:'satvika',
   imageUrl:'https://share.balsamiq.com/c/3S11bcuXgmEGB4ZYCkxpuy.png',
-  //videoUrl:'https://youtu.be/SkgTxQm9DWM',
+  
   uniqueID:'4',
   description:'We want to create an to do list ',
   title:'To do list'
