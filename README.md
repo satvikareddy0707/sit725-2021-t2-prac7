@@ -1,5 +1,5 @@
-# sit725-2021-t2-prac6
+# sit725-2021-t2-prac7
 
-This is week 6 prac of SIT725
+This is week 7 prac of SIT725
 
-It uses Mocha and chai
+It uses Mocha and chai tests
