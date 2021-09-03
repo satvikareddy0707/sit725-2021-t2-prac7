@@ -5,6 +5,8 @@ const getProjects = (res) => {
     Service.ProjectService.getAllProjects(res)
 }
 
+
+
 const createProject = (data, res) => {
     Service.ProjectService.insertProject(data,res)
 }

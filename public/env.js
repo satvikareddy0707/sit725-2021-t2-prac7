@@ -11,7 +11,6 @@ const submitProject=(project)=>{
   });
   }
   
-  
   const newProject=()=>{
     let name = $('#name').val()
     let title = $('#title').val()
